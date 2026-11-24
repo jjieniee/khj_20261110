@@ -7,7 +7,8 @@
     <meta name="description" content="동백커피 센텀점 도라지차를 소재로 제작한 36초 오피스 블랙코미디 광고.">
     <meta name="theme-color" content="#242328">
     <title>동백커피 · 나만 다른 한 잔 | Jiniee's Page</title>
-    <link rel="icon" href="assets/img/favicon_usagi.gif">
+    <link rel="icon" type="image/png" href="assets/img/jiniee-icon.png">
+    <link rel="apple-touch-icon" href="assets/img/jiniee-touch-icon.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Noto+Sans+KR:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
@@ -15,6 +16,7 @@
     <link rel="stylesheet" href="assets/vendor/bootstrap-icons/bootstrap-icons.css">
     <link rel="stylesheet" href="assets/css/main.css">
     <link rel="stylesheet" href="assets/css/project-themes.css">
+    <link rel="stylesheet" href="assets/css/portfolio-stories.css">
   </head>
   <body class="detail-page theme-coffee">
     <header class="site-header sticky-top" id="header">
@@ -47,77 +49,162 @@
         </div>
       </nav>
     </header>
-    <main>
-      <section class="detail-intro" aria-labelledby="project-title">
+    <main class="office-case" id="case-top">
+      <div class="office-backdrops" aria-hidden="true">
+        <div class="office-backdrop" data-office-backdrop="coffee"></div>
+        <div class="office-backdrop" data-office-backdrop="meeting"></div>
+        <div class="office-backdrop" data-office-backdrop="desk"></div>
+        <div class="office-backdrop" data-office-backdrop="exit"></div>
+      </div>
+      <section class="detail-intro office-hero" aria-labelledby="project-title" data-office-scene="coffee">
         <div class="container-xl">
           <a class="back-link" href="index.html#portfolio"><i class="bi bi-arrow-left" aria-hidden="true"></i> ALL WORKS</a>
-          <div class="detail-title-wrap">
-            <div>
+          <div class="office-opening">
+            <div class="office-heading">
               <p class="eyebrow">VIDEO · OFFICE BLACK COMEDY</p>
-              <h1 id="project-title">동백커피 · 나만 다른 한 잔</h1>
-              <p class="detail-subtitle">EP.01 · 모두가 아이스 아메리카노를 마시는 사무실, 내 자리에만 따뜻한 도라지차가 놓였다.</p>
+              <h1 id="project-title">동백커피<br>나만 다른 한 잔</h1>
+              <p class="detail-subtitle">모두가 아이스 아메리카노를 받았다. 왜 나만 다른 한 잔을 받았을까?</p>
             </div>
+            <figure class="office-cup">
+              <img class="office-cup-photo" src="assets/img/case-study/office/product.webp" width="1100" height="618" alt="사무실 책상에 놓인 동백커피의 따뜻한 도라지차" fetchpriority="high">
+              <img class="office-flower" src="assets/img/case-study/office/camellia.webp" width="680" height="261" alt="붉은 동백꽃이 그려진 동백커피 로고">
+            </figure>
           </div>
-          <img src="assets/img/case-study/dongbaek-ending.webp" alt="동백커피 도라지차 컵과 사직서, 엔딩 카피가 함께 보이는 제품샷" width="1600" height="900" class="detail-banner coffee-ending" fetchpriority="high">
         </div>
       </section>
-      <div class="container-xl detail-main detail-work-main">
-        <section class="detail-work" id="overview" aria-labelledby="overview-title">
-          <p class="eyebrow">OVERVIEW</p>
-          <h2 id="overview-title">도라지차 한 잔에서 시작한 오피스 코미디</h2>
-          <p class="detail-body-text">목이 잠긴 진주에게만 따뜻한 도라지차가 도착합니다. 익숙한 오피스 로맨스처럼 시작한 장면에 메신저 한 통이 끼어들고, 호의라고 믿는 부장과 불편함을 느끼는 진주의 간극이 드러납니다.</p>
-          <dl class="detail-facts">
-            <div><dt>형식</dt><dd>브랜드 홍보영상 실습</dd></div>
-            <div><dt>담당</dt><dd>기획 · 시나리오 · AI 영상 제작 · 편집</dd></div>
-            <div><dt>도구</dt><dd>Google Flow · Premiere Pro 2026</dd></div>
-          </dl>
+      <div class="container-xl detail-main detail-work-main office-document">
+        <section class="detail-work office-sheet" id="cast" aria-labelledby="cast-title" data-office-scene="meeting">
+          <p class="eyebrow">CAST &amp; STYLING</p>
+          <h2 id="cast-title">같은 사무실, 다른 마음</h2>
+          <p class="detail-body-text">진주에게는 난처한 상황, 장부장에게는 나름의 호의. 두 인물이 같은 사건을 다르게 받아들인다는 설정을 표정과 오피스룩에서부터 잡았습니다.</p>
+          <div class="asset-gallery office-models">
+              <figure>
+                <a href="assets/img/case-study/dongbaek-jinju.webp" data-enlarge="진주 · 캐릭터 모델시트" aria-label="진주 · 캐릭터 모델시트 확대">
+                  <img src="assets/img/case-study/dongbaek-jinju.webp" width="1500" height="844" alt="진주의 얼굴과 의상 비율을 정리한 모델시트" loading="lazy" decoding="async">
+                </a>
+                <figcaption>진주 · 캐릭터 모델시트</figcaption>
+              </figure>
+              <figure>
+                <a href="assets/img/case-study/dongbaek-manager.webp" data-enlarge="장부장 · 캐릭터 모델시트" aria-label="장부장 · 캐릭터 모델시트 확대">
+                  <img src="assets/img/case-study/dongbaek-manager.webp" width="1500" height="1000" alt="장부장의 얼굴과 차림을 정리한 모델시트" loading="lazy" decoding="async">
+                </a>
+                <figcaption>장부장 · 캐릭터 모델시트</figcaption>
+              </figure>
+          </div>
+          <h3 class="office-subtitle">사무실 스타일 레퍼런스</h3>
+          <div class="asset-gallery office-style">
+              <figure>
+                <a href="assets/img/case-study/office/style-desk.webp" data-enlarge="책상 · 모니터 너머 시선" aria-label="책상 · 모니터 너머 시선 확대">
+                  <img src="assets/img/case-study/office/style-desk.webp" width="923" height="520" alt="책상과 모니터를 이용한 인물 구도 참고 자료" loading="lazy" decoding="async">
+                </a>
+                <figcaption>책상 · 모니터 너머 시선</figcaption>
+              </figure>
+              <figure>
+                <a href="assets/img/case-study/office/style-partition.webp" data-enlarge="파티션 · 두 사람의 거리" aria-label="파티션 · 두 사람의 거리 확대">
+                  <img src="assets/img/case-study/office/style-partition.webp" width="920" height="520" alt="파티션을 사이에 둔 사무실 인물 배치 참고 자료" loading="lazy" decoding="async">
+                </a>
+                <figcaption>파티션 · 두 사람의 거리</figcaption>
+              </figure>
+              <figure>
+                <a href="assets/img/case-study/office/style-walk.webp" data-enlarge="복도 · 오피스룩 실루엣" aria-label="복도 · 오피스룩 실루엣 확대">
+                  <img src="assets/img/case-study/office/style-walk.webp" width="915" height="515" alt="사무실을 걷는 인물의 착장과 카메라 구도 참고 자료" loading="lazy" decoding="async">
+                </a>
+                <figcaption>복도 · 오피스룩 실루엣</figcaption>
+              </figure>
+          </div>
+          <div class="office-style-study">
+            <div class="asset-gallery"><figure>
+                <a href="assets/img/case-study/office/style-sheet.webp" data-enlarge="오피스룩 스타일링 연구 · 차콜 재킷과 아이보리 슬랙스"><img src="assets/img/case-study/office/style-sheet.webp" alt="여성 오피스룩의 전신 각도, 얼굴 표정, 가방과 재킷 디테일을 모은 시트" width="1550" height="872" loading="lazy" decoding="async"></a>
+                <figcaption>오피스룩 스타일링 연구 · 차콜 재킷과 아이보리 슬랙스</figcaption>
+              </figure></div>
+            <div>
+              <h3>얼굴 기준과 의상 레퍼런스 분리</h3>
+              <p>같은 인물에게 다른 옷을 입히는 과정에서 얼굴과 옷 핏이 함께 바뀌었습니다. 얼굴·헤어와 의상 레퍼런스를 분리하고, 정면부터 측면과 뒷모습까지 실루엣을 점검했습니다.</p>
+            </div>
+          </div>
         </section>
-        <section class="detail-work" id="film" aria-labelledby="film-title">
+        <section class="detail-work office-sheet office-film" id="film" aria-labelledby="film-title" data-office-scene="desk">
           <p class="eyebrow">FINAL FILM</p>
           <h2 id="film-title">나만 다른 한 잔</h2>
-          <video class="case-video" controls playsinline preload="none" width="1920" height="1080" poster="assets/img/case-study/dongbaek-ending.webp" aria-label="동백커피 나만 다른 한 잔 광고 영상">
+          <video class="case-video" controls playsinline preload="none" width="1920" height="1080" poster="assets/img/case-study/dongbaek.webp" aria-label="동백커피 나만 다른 한 잔 광고 영상">
             <source src="assets/img/case-study/dongbaek.mp4" type="video/mp4">
-            <a href="assets/img/case-study/dongbaek.mp4">홍보영상 파일 열기</a>
+            <a href="assets/img/case-study/dongbaek.mp4">영상 파일 열기</a>
           </video>
-          <p class="mt-3 mb-0">약 36초 · 2026년 11월 23일 편집본</p>
+          <p class="story-caption">약 36초 · 기획 · 시나리오 · Google Flow · Premiere Pro 2026</p>
         </section>
-        <section class="detail-work" id="process" aria-labelledby="process-title">
-          <p class="eyebrow">PRODUCTION PROCESS</p>
-          <h2 id="process-title">반전을 설계한 세 가지 선택</h2>
-          <div class="detail-decisions">
-            <div><h3>음료의 차이로 이야기를 시작</h3><p>메뉴 조사에서 고른 도라지차를 진주에게만 주었습니다. 컵의 온도와 모양 차이가 메신저가 도착하기 전부터 두 인물의 관계를 궁금하게 만듭니다.</p></div>
-            <div><h3>인물과 공간의 기준을 고정</h3><p>진주와 부장의 모델시트를 만들고, 실제 브랜드 컵 이미지와 한국 사무실의 회색 파티션을 참고해 컷별로 얼굴·착장·소품을 점검했습니다.</p></div>
-            <div><h3>메신저와 연기를 따로 제어</h3><p>Flow에서는 진주의 시선과 표정을 지시했습니다. 한글 메신저 알림은 별도 그래픽으로 준비해 문구와 등장 시간을 편집에서 조절할 수 있도록 했습니다.</p></div>
+        <section class="detail-work office-sheet" id="story" aria-labelledby="story-title" data-office-scene="desk">
+          <p class="eyebrow">STORYBOARD</p>
+          <h2 id="story-title">도라지차에서 메신저, 그리고 사직서까지</h2>
+          <p class="detail-body-text">목이 잠긴 진주에게만 따뜻한 도라지차가 도착합니다. 은근한 호의처럼 열린 이야기의 분위기가 사내 메신저의 발신자를 확인하면서 바뀝니다. 빈자리와 사직서를 거쳐, 도라지차를 다시 보여주는 엔딩으로 닫았습니다.</p>
+          <div class="story-grid">
+            <figure class="story-frame">
+              <img src="assets/img/case-study/office/meeting.webp" alt="회의 중인 진주와 동료들" width="1100" height="618" loading="lazy" decoding="async">
+              <figcaption><a class="story-time" href="#film" data-film-time="4" aria-label="00:04 장면 재생">00:04</a><strong>평범한 회의</strong><p>회의 중 목이 불편한 진주를 잡아 따뜻한 음료가 자연스럽게 등장할 이유를 만듭니다.</p></figcaption>
+            </figure>
+            <figure class="story-frame">
+              <img src="assets/img/case-study/office/different-cup.webp" alt="동료의 아이스컵 옆에 놓인 진주의 핫컵" width="1100" height="618" loading="lazy" decoding="async">
+              <figcaption><a class="story-time" href="#film" data-film-time="13" aria-label="00:13 장면 재생">00:13</a><strong>한 사람의 컵만 다르다</strong><p>동료들의 투명한 컵과 진주의 종이컵을 한 화면에 둬 작은 차이가 먼저 눈에 들어오게 했습니다.</p></figcaption>
+            </figure>
+            <figure class="story-frame">
+              <img src="assets/img/case-study/office/typing.webp" alt="노트북 자판을 두드리는 장부장의 손" width="1100" height="618" loading="lazy" decoding="async">
+              <figcaption><a class="story-time" href="#film" data-film-time="22" aria-label="00:22 장면 재생">00:22</a><strong>배려의 발신자</strong><p>타이핑을 짧게 보여주고 메신저 화면으로 이어, 누구의 관심이었는지 알아차리는 시간을 줍니다.</p></figcaption>
+            </figure>
+            <figure class="story-frame">
+              <img src="assets/img/case-study/office/message.webp" alt="장부장의 메시지가 뜬 채팅 화면" width="1100" height="618" loading="lazy" decoding="async">
+              <figcaption><a class="story-time" href="#film" data-film-time="25" aria-label="00:25 장면 재생">00:25</a><strong>메신저가 분위기를 바꾸다</strong><p>장부장의 말투가 화면에 뜨자 음료의 의미가 달라집니다. 인물의 속내를 자막 설명 대신 메시지로 읽게 했습니다.</p></figcaption>
+            </figure>
+            <figure class="story-frame">
+              <img src="assets/img/case-study/office/vacant-desk.webp" alt="컵과 키보드가 남은 진주의 빈자리" width="1100" height="618" loading="lazy" decoding="async">
+              <figcaption><a class="story-time" href="#film" data-film-time="31" aria-label="00:31 장면 재생">00:31</a><strong>말 없이 남은 자리</strong><p>진주의 반응을 길게 설명하지 않고 책상과 빈 의자로 다음 장면을 연결했습니다.</p></figcaption>
+            </figure>
+            <figure class="story-frame">
+              <img src="assets/img/case-study/office/resignation.webp" alt="동백커피 컵과 사직서가 놓인 마지막 화면" width="1100" height="618" loading="lazy" decoding="async">
+              <figcaption><a class="story-time" href="#film" data-film-time="34" aria-label="00:34 장면 재생">00:34</a><strong>사직서 옆 도라지차</strong><p>사직서와 컵을 한 프레임에 두고, 브랜드 카피로 블랙코미디를 닫았습니다.</p></figcaption>
+            </figure>
           </div>
-          <div class="mt-4">
-            <div class="asset-gallery">
+          <div class="asset-gallery office-boards">
               <figure>
-                <a href="assets/img/case-study/dongbaek-storyboard.webp" data-enlarge="스토리보드" aria-label="스토리보드 확대">
-                  <img src="assets/img/case-study/dongbaek-storyboard.webp" alt="사무실과 메신저 장면을 배열한 스토리보드" width="1055" height="1491" loading="lazy" decoding="async">
+                <a href="assets/img/case-study/office/board-1.webp" data-enlarge="기획 콘티 · 한 잔이 눈에 띄기까지" aria-label="기획 콘티 · 한 잔이 눈에 띄기까지 확대">
+                  <img src="assets/img/case-study/office/board-1.webp" width="1055" height="1491" alt="회의와 음료 배달에서 시작하는 원본 스토리보드 첫 장" loading="lazy" decoding="async">
                 </a>
-                <figcaption>스토리보드</figcaption>
+                <figcaption>기획 콘티 · 한 잔이 눈에 띄기까지</figcaption>
               </figure>
               <figure>
-                <a href="assets/img/case-study/dongbaek-jinju.webp" data-enlarge="진주 모델시트" aria-label="진주 모델시트 확대">
-                  <img src="assets/img/case-study/dongbaek-jinju.webp" alt="직장인 주인공 진주의 캐릭터 모델시트" width="1500" height="844" loading="lazy" decoding="async">
+                <a href="assets/img/case-study/office/board-2.webp" data-enlarge="기획 콘티 · 메신저와 반전" aria-label="기획 콘티 · 메신저와 반전 확대">
+                  <img src="assets/img/case-study/office/board-2.webp" width="1055" height="1491" alt="메신저, 반응, 빈자리와 브랜드 엔딩이 담긴 원본 스토리보드 둘째 장" loading="lazy" decoding="async">
                 </a>
-                <figcaption>진주 모델시트</figcaption>
-              </figure>
-              <figure>
-                <a href="assets/img/case-study/dongbaek-manager.webp" data-enlarge="장부장 모델시트" aria-label="장부장 모델시트 확대">
-                  <img src="assets/img/case-study/dongbaek-manager.webp" alt="중년 직장 상사의 캐릭터 모델시트" width="1500" height="1000" loading="lazy" decoding="async">
-                </a>
-                <figcaption>장부장 모델시트</figcaption>
+                <figcaption>기획 콘티 · 메신저와 반전</figcaption>
               </figure>
           </div>
+        </section>
+        <section class="detail-work office-sheet" id="process" aria-labelledby="process-title" data-office-scene="exit">
+          <p class="eyebrow">PROBLEM SOLVING</p>
+          <h2 id="process-title">한 사무실의 이야기처럼 이어 붙이기</h2>
+          <div class="story-grid">
+            <article class="story-frame">
+              <img src="assets/img/case-study/office/meeting.webp" width="960" height="540" alt="회의 장면의 인물과 사무실" loading="lazy">
+              <div class="story-note"><h3>인물 고정</h3><p>컷마다 얼굴과 어깨 비율, 옷 핏이 달라졌습니다. 얼굴·헤어 이미지와 의상 참고를 분리하고, 모델시트를 기준으로 필요한 부위만 수정했습니다.</p></div>
+            </article>
+            <article class="story-frame">
+              <img src="assets/img/case-study/office/desk.webp" width="960" height="540" alt="모니터와 회색 파티션이 보이는 사무실" loading="lazy">
+              <div class="story-note"><h3>배경과 소품 고정</h3><p>회색 파티션, 책상 배치와 모니터 위치를 장면마다 지정했습니다. 음료 컵도 실제 제품 사진을 참고해 뚜껑과 로고가 달라지는 컷을 점검했습니다.</p></div>
+            </article>
+            <article class="story-frame">
+              <img src="assets/img/case-study/office/reaction.webp" width="960" height="540" alt="메신저를 본 사무실 인물의 반응 컷" loading="lazy">
+              <div class="story-note"><h3>대사와 메신저를 화면에서 분리</h3><p>Flow에서 영어 대사가 나오거나 화자가 섞여, 영상 생성과 한국어 후더빙을 나누는 방식을 검토했습니다. 한글 메신저도 별도 그래픽으로 준비해 문구와 등장 타이밍을 편집에서 조절했습니다.</p></div>
+            </article>
           </div>
+          <dl class="office-decisions">
+            <div><dt>연기와 카메라</dt><dd>고개와 팔이 과하게 움직이는 생성 컷에 고정 구도를 지정하고 눈동자, 표정, 손가락 동작을 작게 나눠 지시했습니다. 본편의 타이핑 인서트에서는 손과 키보드에 시선이 집중됩니다.</dd></div>
+            <div><dt>컵과 브랜드</dt><dd>컵과 뚜껑이 달라져 실제 제품 사진으로 형태와 로고를 다시 잡았습니다. 본편은 회의와 책상에서 음료의 차이를 드러내고, 마지막에는 브랜드 컵과 사직서를 가까이 보여줍니다.</dd></div>
+          </dl>
         </section>
       </div>
       <section class="detail-next">
         <div class="container-xl">
-          <a href="portfolio-details-4.html">
+          <a href="portfolio-details-9.html">
             <span>NEXT PROJECT</span>
-            <strong>운동 초보가 가장 자주 하는 실수 <i class="bi bi-arrow-right" aria-hidden="true"></i></strong>
+            <strong>센텀직업전문학교 홍보영상 <i class="bi bi-arrow-right" aria-hidden="true"></i></strong>
           </a>
         </div>
       </section>
@@ -125,11 +212,12 @@
     <footer class="site-footer">
       <div class="container-xl d-flex flex-column flex-sm-row justify-content-between gap-2 align-items-sm-center">
         <p class="mb-0">© 2026 Jiniee. Crafted with curiosity.</p>
-        <a href="index.html#hero">Back to top <i class="bi bi-arrow-up-right"></i></a>
+        <a href="#case-top">Back to top <i class="bi bi-arrow-up-right"></i></a>
       </div>
     </footer>
     <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
     <script src="assets/js/main.js"></script>
     <script src="assets/js/asset-gallery.js"></script>
+    <script src="assets/js/portfolio-effects.js" defer></script>
   </body>
 </html>

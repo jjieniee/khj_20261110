@@ -7,7 +7,8 @@
     <meta name="description" content="분사와 물방울, 수면, 제품 히어로 컷의 흐름으로 수분감의 이미지를 전달하는 뷰티 영상 실습 프로젝트입니다.">
     <meta name="theme-color" content="#242328">
     <title>토리든 DIVE-IN 크림 미스트 | Jiniee's Page</title>
-    <link rel="icon" href="assets/img/favicon_usagi.gif">
+    <link rel="icon" type="image/png" href="assets/img/jiniee-icon.png">
+    <link rel="apple-touch-icon" href="assets/img/jiniee-touch-icon.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Noto+Sans+KR:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
@@ -16,6 +17,7 @@
     <link rel="stylesheet" href="assets/css/main.css">
     <link rel="stylesheet" href="assets/css/case-study.css">
     <link rel="stylesheet" href="assets/css/project-themes.css">
+    <link rel="stylesheet" href="assets/css/portfolio-stories.css">
   </head>
   <body class="detail-page theme-mist">
     <header class="site-header sticky-top" id="header">
@@ -66,11 +68,23 @@
           <nav class="case-links" aria-label="프로젝트 목차">
             <a href="#film">광고 보기</a>
             <a href="#concept">콘셉트</a>
+            <a href="#model">가상모델</a>
             <a href="#process">제작 과정</a>
             <a href="#decisions">제작 판단</a>
           </nav>
         </div>
       </section>
+
+      <div class="mist-motion mist-dive" data-mist-motion>
+        <video muted playsinline preload="none" poster="assets/img/case-study/mist-water.webp" width="960" height="540" aria-hidden="true">
+          <source src="assets/img/case-study/mist-dive-effect.mp4" type="video/mp4">
+        </video>
+        <div class="mist-blind" aria-hidden="true"></div>
+        <div class="container-xl mist-motion-copy">
+          <p class="eyebrow">DIVE INTO HYDRATION</p>
+          <p>수면 아래로</p>
+        </div>
+      </div>
 
       <section class="case-section" aria-labelledby="overview-title">
         <div class="container-xl case-split">
@@ -97,6 +111,17 @@
         </div>
       </section>
 
+      <div class="mist-motion mist-spray" data-mist-motion>
+        <video muted playsinline preload="none" poster="assets/img/case-study/mist-spray.webp" width="960" height="540" aria-hidden="true">
+          <source src="assets/img/case-study/mist-spray-effect.mp4" type="video/mp4">
+        </video>
+        <div class="mist-vapor" aria-hidden="true"></div>
+        <div class="container-xl mist-motion-copy">
+          <p class="eyebrow">FINE MIST</p>
+          <p>한 번의 분사,<br>빛에 흩어지는 수분</p>
+        </div>
+      </div>
+
       <section class="case-section case-concept" id="concept" aria-labelledby="concept-title">
         <div class="container-xl case-split">
           <div class="case-pin">
@@ -105,11 +130,49 @@
             <p>아이시 아쿠아와 소프트 시안을 중심으로 색을 잡았습니다. 수중에서 빛이 굴절되는 무늬와 입자의 움직임으로 청량함과 몽환적인 분위기를 연결했습니다.</p>
           </div>
           <div class="case-mood">
-            <figure><img class="case-media" src="assets/img/case-study/mist-reference.webp" loading="lazy" alt="모델이 얼굴 옆으로 크림 미스트 병을 들어 라벨을 보여주는 이미지"><figcaption>제품 비주얼 · 병의 비율과 라벨을 확인할 수 있는 모델 컷</figcaption></figure>
+            <figure><img class="case-media" src="assets/img/case-study/mist-reference.webp" width="1280" height="714" loading="lazy" alt="모델이 얼굴 옆으로 크림 미스트 병을 들어 라벨을 보여주는 이미지"><figcaption>제품 비주얼 · 병의 비율과 라벨을 확인할 수 있는 모델 컷</figcaption></figure>
             <figure><img class="case-media" src="assets/img/case-study/mist-water.webp" width="1280" height="720" loading="lazy" alt="물속에서 올려다본 푸른 수면과 기포"><figcaption>수중의 깊이와 청량한 아쿠아</figcaption></figure>
             <figure><img class="case-media" src="assets/img/case-study/mist-light.webp" width="1280" height="720" loading="lazy" alt="수면 아래 모델 얼굴에 굴절된 빛"><figcaption>피부 위 물결 빛</figcaption></figure>
             <figure><img class="case-media" src="assets/img/case-study/mist-detail.webp" width="1280" height="720" loading="lazy" alt="분사 직후 밝게 흩어지는 미세한 입자"><figcaption>분사에서 물방울로</figcaption></figure>
           </div>
+        </div>
+      </section>
+
+      <section class="case-section" id="model" aria-labelledby="model-title">
+        <div class="container-xl">
+          <p class="eyebrow">VIRTUAL MODEL DEVELOPMENT</p>
+          <h2 id="model-title">각도가 바뀌어도 같은 모델로</h2>
+          <p class="mist-model-rules">제품을 사용하는 컷과 물속 화보가 같은 인물의 장면처럼 이어지도록 기준 얼굴과 모델시트를 만들었습니다. 얼굴 비율과 피부 표현을 고정한 뒤 분사 자세, 시선, 조명을 컷에 맞춰 바꿨습니다.</p>
+          <div class="asset-gallery mist-model-grid">
+            <figure>
+              <a href="assets/img/case-study/mist-model/master.webp" data-enlarge="기준 얼굴 · 얼굴 비율, 쿨 핑크 혈색과 장밋빛 입술">
+                <img src="assets/img/case-study/mist-model/master.webp" alt="가상모델 기준 얼굴과 표정을 나란히 보여주는 시트" width="1200" height="896" loading="lazy" decoding="async">
+              </a>
+              <figcaption>기준 얼굴 · 얼굴 비율, 쿨 핑크 혈색과 장밋빛 입술</figcaption>
+            </figure>
+            <figure>
+              <a href="assets/img/case-study/mist-model/turnaround.webp" data-enlarge="모델시트 · 각도를 바꿔 얼굴과 몸의 비율 비교">
+                <img src="assets/img/case-study/mist-model/turnaround.webp" alt="동일 모델의 전신과 옆모습을 정리한 슬립 착장 시트" width="1300" height="726" loading="lazy" decoding="async">
+              </a>
+              <figcaption>모델시트 · 각도를 바꿔 얼굴과 몸의 비율 비교</figcaption>
+            </figure>
+            <figure>
+              <a href="assets/img/case-study/mist-model/use-product.webp" data-enlarge="분사 직전 · 손 자세와 병의 각도, 얼굴과 제품의 거리 조정">
+                <img src="assets/img/case-study/mist-model/use-product.webp" alt="미스트 병을 얼굴 가까이 들어 분사를 준비하는 모델" width="1300" height="726" loading="lazy" decoding="async">
+              </a>
+              <figcaption>분사 직전 · 손 자세와 병의 각도, 얼굴과 제품의 거리 조정</figcaption>
+            </figure>
+            <figure>
+              <a href="assets/img/case-study/mist-light.webp" data-enlarge="수중 장면 · 물결 빛과 아쿠아 색을 얹어도 인물의 특징 유지">
+                <img src="assets/img/case-study/mist-light.webp" alt="굴절된 빛이 얼굴에 비치는 가상모델의 수중 장면" width="1280" height="720" loading="lazy" decoding="async">
+              </a>
+              <figcaption>수중 장면 · 물결 빛과 아쿠아 색을 얹어도 인물의 특징 유지</figcaption>
+            </figure>
+          </div>
+          <dl class="case-decisions">
+            <div><dt>제품</dt><dd>원본 사진을 기준으로 병의 길이와 로고·패키지 글자를 확인했습니다. 물속 컷에서도 제품을 알아볼 수 있도록 라벨이 드러나는 각도를 지정했습니다.</dd></div>
+            <div><dt>공간과 조명</dt><dd>수면 위에서 아래로 내려가는 시점을 나눴습니다. 과장되던 기포와 반사광을 줄이고 작은 기포, 물결 빛, 아쿠아 색을 이어 화면마다 깊이와 톤을 비교했습니다.</dd></div>
+          </dl>
         </div>
       </section>
 
@@ -118,9 +181,9 @@
           <p class="eyebrow">DESIGN &amp; PRODUCTION PROCESS</p>
           <h2 id="process-title">분사 장면에서 수중 장면까지</h2>
           <ol class="case-steps">
-            <li><figure><img class="case-media" src="assets/img/case-study/mist-reference.webp" alt="모델과 제품 기준 이미지" loading="lazy"><figcaption><strong>제품과 모델의 기준 잡기</strong>병의 길이와 로고 위치를 비교할 수 있도록 제품 사진과 회전 시트를 기준으로 삼았습니다.</figcaption></figure></li>
-            <li><figure><img class="case-media" src="assets/img/case-study/mist-water.webp" alt="아래에서 올려다본 수면과 기포" loading="lazy"><figcaption><strong>물속으로 들어가는 움직임 만들기</strong>Google Flow에서 수면에 닿는 순간과 물속으로 내려가는 시점을 나눠 지시했습니다. 기포의 크기와 반사광을 줄여 깊이감을 조정했습니다.</figcaption></figure></li>
-            <li><figure><img class="case-media" src="assets/img/case-study/mist-hero.webp" alt="영상 끝에 등장하는 제품" loading="lazy"><figcaption><strong>15초 기획을 24초로 확장하기</strong>After Effects에서 컷 길이와 자막 타이밍을 맞췄습니다. Google AI Studio에서는 나른하게 들리던 내레이션의 속도와 억양을 조정했습니다.</figcaption></figure></li>
+            <li><figure><img class="case-media" src="assets/img/case-study/mist-reference.webp" width="1280" height="714" alt="모델과 제품 기준 이미지" loading="lazy"><figcaption><strong>제품과 모델의 기준 잡기</strong>병의 길이와 로고 위치를 비교할 수 있도록 제품 사진과 회전 시트를 기준으로 삼았습니다.</figcaption></figure></li>
+            <li><figure><img class="case-media" src="assets/img/case-study/mist-water.webp" width="1280" height="720" alt="아래에서 올려다본 수면과 기포" loading="lazy"><figcaption><strong>물속으로 들어가는 움직임 만들기</strong>Google Flow에서 수면에 닿는 순간과 물속으로 내려가는 시점을 나눠 지시했습니다. 기포의 크기와 반사광을 줄여 깊이감을 조정했습니다.</figcaption></figure></li>
+            <li><figure><img class="case-media" src="assets/img/case-study/mist-hero.webp" width="1280" height="720" alt="영상 끝에 등장하는 제품" loading="lazy"><figcaption><strong>15초 기획을 24초로 확장하기</strong>After Effects에서 컷 길이와 자막 타이밍을 맞췄습니다. Google AI Studio에서는 나른하게 들리던 내레이션의 속도와 억양을 조정했습니다.</figcaption></figure></li>
           </ol>
         </div>
       </section>
@@ -158,6 +221,8 @@
     </footer>
     <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
     <script src="assets/js/main.js"></script>
+    <script src="assets/js/asset-gallery.js"></script>
     <script src="assets/js/case-study.js" defer></script>
+    <script src="assets/js/portfolio-effects.js" defer></script>
   </body>
 </html>
