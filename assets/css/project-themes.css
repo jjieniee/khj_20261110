@@ -1,0 +1,139 @@
+/* Each process step occupies one row in the document's own scroll flow. */
+.detail-decisions {
+  display: block;
+  max-width: 56rem;
+}
+.detail-decisions > div {
+  padding-block: clamp(1.2rem, 3vw, 2rem);
+  border-top: 1px solid var(--rule);
+}
+.detail-decisions p { max-width: 64ch; margin: 0; line-height: 1.85; }
+.detail-decisions h3 { font-size: clamp(1.15rem, 2vw, 1.5rem); }
+.mist-case .case-steps { grid-template-columns: minmax(0, 1fr); gap: 2rem; }
+.case-steps figure {
+  display: grid;
+  grid-template-columns: minmax(0, .9fr) minmax(0, 1fr);
+  align-items: center;
+  gap: clamp(1rem, 4vw, 3rem);
+  padding-top: 1.5rem;
+  border-top: 1px solid #a6c5c9;
+}
+.case-steps figcaption { max-width: 48ch; line-height: 1.8; }
+.case-steps strong { font-size: 1.3rem; }
+
+/* Project palettes are confined to the content between the shared navigation bars. */
+.theme-character { --paper: #302321; --ink: #fff2e1; --accent: #f0c298; --rule: #826455; }
+.theme-coffee { --paper: #f3eee5; --ink: #312b27; --accent: #8d362f; --rule: #c6b6a8; }
+.theme-pixel { --paper: #29171d; --ink: #fff0d4; --accent: #f5cb8c; --rule: #a98261; }
+.theme-rock { --paper: #f6e9f0; --ink: #231c26; --accent: #8d235b; --rule: #bc97ad; }
+.theme-web { --paper: #242328; --ink: #f8f0f6; --accent: #ffc4df; --rule: #695565; }
+.theme-studio { --paper: #1c1630; --ink: #faf6ff; --accent: #d0b3ff; --rule: #76608d; }
+.theme-felt { --paper: #fbf6ee; --ink: #40352f; --accent: #81564c; --rule: #d7c5b9; }
+
+.detail-page:not(.theme-mist) main { background: var(--paper); color: var(--ink); }
+.detail-intro { background: var(--paper); }
+.detail-intro :is(.back-link, .eyebrow, .detail-year),
+.detail-main :is(.eyebrow, .detail-facts dt, .detail-decisions h3, .process-list li > span) { color: var(--accent); }
+.detail-main :is(h2, .detail-body-text, .process-list p), .detail-intro .detail-subtitle { color: var(--ink); }
+.detail-work + .detail-work, .process-list li { border-color: var(--rule); }
+.detail-rule { background: var(--rule); }
+.detail-intro h1, .detail-work h2, .detail-decisions h3 { word-break: keep-all; overflow-wrap: anywhere; }
+.detail-intro .detail-title-wrap { min-width: 0; }
+.detail-page .asset-dialog { color: #fff; }
+.theme-rock .chimi-gallery-picker select { color: #fff; }
+
+/* A still from Chimi's bedroom sets the warm light for the character study. */
+.theme-character .detail-intro { background: linear-gradient(165deg, #33262e, #4c3529); }
+.character-scene { overflow: hidden; margin: 0; border-radius: 2rem .4rem; }
+.character-scene img { display: block; width: 100%; height: auto; }
+.theme-character .detail-aside { background: #392c28; border-color: var(--rule); }
+
+/* Coffee uses the horizontal composition of the office film. */
+.theme-coffee .detail-intro { border-bottom: 4px solid #993d38; }
+.theme-coffee .detail-banner { border-radius: 0; max-height: 36rem; aspect-ratio: 2.1; }
+.theme-coffee #process h3 { border-left: 4px solid #ac4038; padding-left: .8rem; }
+.theme-coffee #film video { border-radius: 0; }
+
+/* The original wallpaper and double frame come from the card-news artwork. */
+.theme-pixel .detail-intro {
+  background: linear-gradient(90deg, #28121afc, #28121acf), url('../img/case-study/card-news/background.webp') center / cover;
+}
+.theme-pixel .detail-banner, .theme-pixel .card-gallery a {
+  border: 4px double #dfc092;
+  border-radius: 0;
+}
+.theme-pixel #process .detail-decisions > div {
+  background: #3d2029;
+  border: 4px double var(--rule);
+  margin-block: 1rem;
+  padding: clamp(1rem, 3vw, 2rem);
+}
+.theme-pixel #process h3 { font-family: ui-monospace, monospace; }
+
+/* The product's torn-paper titles, pink type and checks carry into the case study. */
+.theme-rock .chimi-intro {
+  background-color: #f3e5ef;
+  background-image: repeating-conic-gradient(#dfc5da55 0 25%, transparent 0 50%);
+  background-size: 32px 32px;
+  border-bottom: 5px solid #241c27;
+}
+.theme-rock .chimi-intro .container-xl { grid-template-columns: minmax(0, 1fr) minmax(6rem, 22%); }
+.theme-rock .chimi-intro-image { max-height: 33rem; width: auto; max-width: 100%; justify-self: center; }
+.theme-rock h1 { color: #231c26; }
+.theme-rock #process h3 {
+  display: inline-block;
+  color: #ffd1e6;
+  background: #2b202c;
+  padding: .55rem 1rem .6rem;
+  clip-path: polygon(0 4%, 99% 0, 100% 92%, 1% 100%);
+}
+.theme-rock #final .asset-gallery figure { background: #fffafc; padding: .45rem; box-shadow: 2px 3px 0 #d6b4ca; }
+.theme-rock .chimi-gallery a { border-radius: 0; }
+
+/* The home page's headline and photograph link back to the responsive site. */
+.theme-web .detail-intro { border-block-end: 1px solid var(--rule); }
+.web-preview {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 35%;
+  align-items: center;
+  gap: 1rem;
+  padding: clamp(1rem, 4vw, 3.5rem);
+  border: 1px solid var(--rule);
+  border-top: .65rem solid #574450;
+  border-radius: .7rem;
+  background: #18161d;
+}
+.web-preview-copy strong { display: block; margin-bottom: 1rem; font-size: clamp(1.15rem, 4vw, 3rem); }
+.web-preview-copy span { color: var(--accent); }
+.web-preview img { width: 100%; border-radius: 1rem; }
+
+/* The visual studies index follows the violet artwork on its Selected Works card. */
+.theme-studio .detail-intro { background: radial-gradient(ellipse at 80% 50%, #392850, #1c1630 65%); }
+.theme-studio .detail-art .project-art { border-radius: 50% 0 0 0; height: clamp(16rem, 30vw, 26rem); }
+.theme-studio .detail-aside { background: #282139; border-color: var(--rule); }
+.related-cases { list-style: none; padding: 0; }
+.related-cases a { display: block; color: var(--ink); padding: 1rem 0; border-top: 1px solid var(--rule); }
+
+/* A pale ground and rounded mounts echo the felt character reference sheets. */
+.theme-felt .detail-intro { background: #f4e9df; }
+.theme-felt .detail-title-wrap h1 { font-family: Georgia, 'Nanum Myeongjo', serif; font-weight: 650; }
+.theme-felt .detail-banner { background: #fcfafb; border-radius: 45% 45% 1rem 1rem; }
+.theme-felt .felt-gallery figure { background: #fff; padding: .8rem; border-radius: 1.4rem; border: 1px solid var(--rule); }
+.theme-felt #process .detail-decisions { border-left: 2px dashed var(--rule); padding-left: 1.6rem; }
+
+@media (min-width: 768px) {
+  :is(.theme-felt, .theme-pixel) .detail-intro .container-xl {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(0, .85fr);
+    gap: 1.5rem 4rem;
+    align-items: center;
+  }
+  :is(.theme-felt, .theme-pixel) .back-link { grid-column: 1 / -1; justify-self: start; }
+  .theme-pixel .detail-banner { aspect-ratio: 1; width: min(100%, 26rem); justify-self: end; }
+  .theme-felt .detail-banner { aspect-ratio: 4 / 3; }
+}
+@media (max-width: 575px) {
+  .case-steps figure { grid-template-columns: minmax(0, 1fr); }
+  .theme-pixel .detail-banner { aspect-ratio: 1; }
+  .theme-rock .chimi-intro .container-xl { grid-template-columns: minmax(0, 1fr) 24%; }
+}

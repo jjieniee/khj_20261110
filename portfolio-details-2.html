@@ -15,8 +15,9 @@
     <link rel="stylesheet" href="assets/vendor/bootstrap-icons/bootstrap-icons.css">
     <link rel="stylesheet" href="assets/css/main.css">
     <link rel="stylesheet" href="assets/css/case-study.css">
+    <link rel="stylesheet" href="assets/css/project-themes.css">
   </head>
-  <body class="detail-page">
+  <body class="detail-page theme-mist">
     <header class="site-header sticky-top" id="header">
       <nav class="navbar navbar-expand-lg navbar-dark" aria-label="메인 메뉴">
         <div class="container-xl">
@@ -65,7 +66,7 @@
           <nav class="case-links" aria-label="프로젝트 목차">
             <a href="#film">광고 보기</a>
             <a href="#concept">콘셉트</a>
-            <a href="#process">컷 구성</a>
+            <a href="#process">제작 과정</a>
             <a href="#decisions">제작 판단</a>
           </nav>
         </div>
@@ -115,15 +116,11 @@
       <section class="case-section" id="process" aria-labelledby="process-title">
         <div class="container-xl">
           <p class="eyebrow">DESIGN &amp; PRODUCTION PROCESS</p>
-          <h2 id="process-title">24초의 시선 흐름</h2>
-          <p>Google Flow로 장면을 만들고 After Effects에서 컷을 연결했습니다. 아래 시간은 각 프레임을 추출한 영상 속 위치입니다.</p>
+          <h2 id="process-title">분사 장면에서 수중 장면까지</h2>
           <ol class="case-steps">
-            <li class="case-reveal"><figure><img class="case-media" src="assets/img/case-study/mist-spray.webp" width="1280" height="720" loading="lazy" alt="얼굴에 미스트를 분사하는 모델"><figcaption><time datetime="PT1S">00:01</time><strong>사용 장면</strong>제품을 쓰는 동작으로 상황을 즉시 전달합니다.</figcaption></figure></li>
-            <li class="case-reveal"><figure><img class="case-media" src="assets/img/case-study/mist-detail.webp" width="1280" height="720" loading="lazy" alt="분사 입자의 확대 장면"><figcaption><time datetime="PT3S">00:03</time><strong>입자의 확대</strong>분사 동작에서 입자의 질감으로 시선을 옮깁니다.</figcaption></figure></li>
-            <li class="case-reveal"><figure><img class="case-media" src="assets/img/case-study/mist-water.webp" width="1280" height="720" loading="lazy" alt="빛을 향해 떠오르는 수중 기포"><figcaption><time datetime="PT7S">00:07</time><strong>수중으로 전환</strong>기포와 수면의 빛으로 수분감의 스케일을 키웁니다.</figcaption></figure></li>
-            <li class="case-reveal"><figure><img class="case-media" src="assets/img/case-study/mist-light.webp" width="1280" height="720" loading="lazy" alt="피부에 빛 무늬가 비치는 수중 모델"><figcaption><time datetime="PT12S">00:12</time><strong>피부에 돌아오는 빛</strong>수중에서 모델의 얼굴을 다시 보여주며 감각을 피부에 연결합니다.</figcaption></figure></li>
-            <li class="case-reveal"><figure><img class="case-media" src="assets/img/case-study/mist-bottle.webp" width="1280" height="720" loading="lazy" alt="수면에 비스듬히 누운 제품 병"><figcaption><time datetime="PT17S">00:17</time><strong>제품 재등장</strong>물결 속 병을 보여주며 마지막 제품 컷을 예고합니다.</figcaption></figure></li>
-            <li class="case-reveal"><figure><img class="case-media" src="assets/img/case-study/mist-hero.webp" width="1280" height="720" loading="lazy" alt="제품명과 함께 등장하는 정면 제품 병"><figcaption><time datetime="PT22S">00:22</time><strong>히어로와 제품명</strong>세워진 병과 제품명을 함께 보여주며 마무리합니다.</figcaption></figure></li>
+            <li><figure><img class="case-media" src="assets/img/case-study/mist-reference.webp" alt="모델과 제품 기준 이미지" loading="lazy"><figcaption><strong>제품과 모델의 기준 잡기</strong>병의 길이와 로고 위치를 비교할 수 있도록 제품 사진과 회전 시트를 기준으로 삼았습니다.</figcaption></figure></li>
+            <li><figure><img class="case-media" src="assets/img/case-study/mist-water.webp" alt="아래에서 올려다본 수면과 기포" loading="lazy"><figcaption><strong>물속으로 들어가는 움직임 만들기</strong>Google Flow에서 수면에 닿는 순간과 물속으로 내려가는 시점을 나눠 지시했습니다. 기포의 크기와 반사광을 줄여 깊이감을 조정했습니다.</figcaption></figure></li>
+            <li><figure><img class="case-media" src="assets/img/case-study/mist-hero.webp" alt="영상 끝에 등장하는 제품" loading="lazy"><figcaption><strong>15초 기획을 24초로 확장하기</strong>After Effects에서 컷 길이와 자막 타이밍을 맞췄습니다. Google AI Studio에서는 나른하게 들리던 내레이션의 속도와 억양을 조정했습니다.</figcaption></figure></li>
           </ol>
         </div>
       </section>
@@ -144,12 +141,6 @@
         </div>
       </section>
 
-      <section class="case-section" aria-labelledby="reflection-title">
-        <div class="container-xl case-split">
-          <div><p class="eyebrow">REFLECTION</p><h2 id="reflection-title">다음 제작에서<br>이어갈 기준</h2></div>
-          <p>소재별 컷의 역할을 미리 나누면 생성 영상에서도 편집의 흐름을 잡기 쉬워집니다. 음성 테스트에서는 맑은 음색을 유지하며 속도와 억양을 조정했습니다. 다음 작업에서는 각도별 제품 레퍼런스와 라벨 확인용 프레임을 함께 준비할 계획입니다.</p>
-        </div>
-      </section>
       <section class="detail-next">
         <div class="container-xl">
           <a href="portfolio-details-3.html">
