@@ -51,6 +51,7 @@
 /* Coffee uses the horizontal composition of the office film. */
 .theme-coffee .detail-intro { border-bottom: 4px solid #993d38; }
 .theme-coffee .detail-banner { border-radius: 0; max-height: 36rem; aspect-ratio: 2.1; }
+.theme-coffee .coffee-ending { height: auto; max-height: none; aspect-ratio: 16 / 9; object-fit: contain; }
 .theme-coffee #process h3 { border-left: 4px solid #ac4038; padding-left: .8rem; }
 .theme-coffee #film video { border-radius: 0; }
 
