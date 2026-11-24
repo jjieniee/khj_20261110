@@ -55,9 +55,9 @@
 .theme-coffee #process h3 { border-left: 4px solid #ac4038; padding-left: .8rem; }
 .theme-coffee #film video { border-radius: 0; }
 
-/* The original wallpaper and double frame come from the card-news artwork. */
+/* The double frame and burgundy palette follow the card-news artwork. */
 .theme-pixel .detail-intro {
-  background: linear-gradient(90deg, #28121afc, #28121acf), url('../img/case-study/card-news/background.webp') center / cover;
+  background: linear-gradient(90deg, #28121a, #3c242e);
 }
 .theme-pixel .detail-banner, .theme-pixel .card-gallery a {
   border: 4px double #dfc092;

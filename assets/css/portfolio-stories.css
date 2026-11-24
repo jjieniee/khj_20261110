@@ -200,9 +200,6 @@ a.story-time:is(:hover, :focus-visible) { color: inherit; }
 .chimi-stickers { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); list-style: none; margin: 1.2rem 0; padding: 0; gap: .45rem; }
 .chimi-stickers li { display: grid; background: #fff9fc; text-align: center; padding: .45rem .25rem; font-size: .82rem; border: 1px solid #e0bfd2; }
 .chimi-stickers img { margin: auto; width: 100%; height: 3.2rem; object-fit: contain; }
-.card-layers { grid-template-columns: repeat(3, minmax(0, 1fr)); margin-bottom: 1.5rem; }
-.card-layers img { background: #3c242e; }
-.card-layers figure:last-child img { background: #d8bcb1; }
 
 /* The felt reference views share a common ground, without cropping the ears or tail. */
 .felt-turnaround { grid-template-columns: repeat(3, minmax(0, 1fr)); }
@@ -255,7 +252,6 @@ a.story-time:is(:hover, :focus-visible) { color: inherit; }
   .office-decisions > div { grid-template-columns: minmax(0, 1fr); }
   .theme-rock .chimi-intro .container-xl { grid-template-columns: minmax(0, 1fr); }
   .chimi-keyring img { aspect-ratio: 4 / 3; }
-  .card-layers { grid-template-columns: minmax(0, 1fr); }
   .felt-turnaround { gap: .35rem; }
   .theme-felt .felt-turnaround figure { padding: .25rem; border-radius: .5rem; }
   .felt-turnaround figcaption { font-size: .78rem; }
